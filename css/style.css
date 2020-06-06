@@ -1,0 +1,263 @@
+/*
+Theme Name: Roleplay Universe
+Author: Nordin Kole
+Description: The theme used for Roleplay Universe
+Version: 0.1
+Tags: blog
+*/
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  font-size: 11pt;
+  font-family: 'Lato', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: #444444;
+}
+
+a :visited {
+  color: #444444;
+}
+
+.filter-button {
+  width: 100%;
+  height: 2.5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.filter-button .filterWord {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.filter-button .filterWord:hover {
+  cursor: pointer;
+}
+
+.filter-button #filter-on-off {
+  margin-right: 0.5em;
+  width: 0;
+  height: 0;
+  border-left: 0.7vh solid transparent;
+  border-right: 0.7vh solid transparent;
+  border-bottom: 1.5vh solid black;
+}
+
+.filter-button #filter-on-off:hover {
+  cursor: pointer;
+  border-bottom-color: #444;
+}
+
+.post-filter {
+  display: none;
+}
+
+.searchandfilter {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.searchandfilter ul {
+  padding: 0;
+}
+
+.searchandfilter input[type=submit] {
+  border: none;
+  border-radius: 0;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  padding: 0.25em 1em;
+}
+
+.post-title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 5vh;
+}
+
+.post-title-container h2 {
+  min-height: 4vh;
+  margin: 0;
+  width: 70%;
+}
+
+.post-title-container .categories {
+  height: 4vh;
+  width: 30%;
+  padding-right: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.post-title-container .categories a {
+  height: 2em;
+  width: 2em;
+  margin-left: 0.5em;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.blog-main {
+  padding-top: 2.5vh;
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.blog-masthead {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  height: 15vh;
+  width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.blog-masthead .main_logo {
+  height: calc(15vh - 4em);
+  width: calc(2 * 15vh - 2em);
+  background-image: url(../img/logo_full.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.blog-masthead .container {
+  height: 2em;
+  width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.blog-masthead .container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.blog-masthead .container nav li {
+  margin: 0 1vw;
+}
+
+.row {
+  padding: 2.5vh 32vw;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .row {
+    padding: 2.5vh;
+  }
+  .blog-masthead .main_logo {
+    height: calc(15vh - 3em);
+  }
+  .post-title-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .post-title-container h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .post-title-container .categories {
+    width: 100%;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 2.5vh;
+  }
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+  }
+}

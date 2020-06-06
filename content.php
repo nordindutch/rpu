@@ -1,13 +1,17 @@
 <div class="blog-post">
-  <h2 class="blog-post-title">Sample blog post</h2>
-  <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
+  <div class="post-title-container">
+    <h2 class="blog-post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+    <div class="categories">
+      <?php foreach (get_the_category() as $cat) : ?>
+      <a href="<?php echo get_category_link($cat->term_id); ?>" style="background-image: url(<?php echo z_taxonomy_image_url($cat->term_id); ?>)"></a>
+      <?php endforeach; ?>
+    </div>
+  </div>
 
-  <p>
-    This blog post shows a few different types of content that's supported and styled with
-    Bootstrap. Basic typography, images, and code are all supported.
-  </p>
-  <hr />
 
-  <!-- the rest of the content -->
+  
+  <?php the_excerpt(); ?>
+ 
+  <hr>
 </div>
 <!-- /.blog-post -->

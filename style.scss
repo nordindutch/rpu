@@ -1,0 +1,41 @@
+/*
+Theme Name: Roleplay Universe
+Author: Nordin Kole
+Description: The theme used for Roleplay Universe
+Version: 0.1
+Tags: blog
+*/
+
+html {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    font-size: 11pt;
+    font-family: 'Montserrat', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.blog-masthead {
+    height: 15vh;
+    width: 100%;
+}
+
+.row {
+    padding: 0 33vw;
+}

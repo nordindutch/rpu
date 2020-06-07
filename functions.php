@@ -17,3 +17,4 @@ function startwordpress_google_fonts() {
 
 add_action('wp_print_styles', 'startwordpress_google_fonts');
 add_theme_support( 'title-tag' );
+add_theme_support( 'post-thumbnails' );

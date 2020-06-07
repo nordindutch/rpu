@@ -25,3 +25,19 @@
       </nav>
     </div>
   </div>
+  <div class="go-to-top" id="goto" onclick="goTop()">
+    <svg class="arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="76.95px" height="44.84px" viewBox="0 0 76.95 44.84" style="overflow:visible;enable-background:new 0 0 76.95 44.84;" xml:space="preserve">
+      <style type="text/css">
+        .stz {
+          fill: none;
+          stroke: #FFFFFF;
+          stroke-width: 9;
+          stroke-miterlimit: 10;
+          z-index: 100;
+        }
+      </style>
+      <defs>
+      </defs>
+      <polyline class="stz" points="73.77,41.66 38.48,6.36 3.18,41.66 " />
+    </svg>
+  </div>

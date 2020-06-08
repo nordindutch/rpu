@@ -40,7 +40,7 @@
 		<div id="information-button" onclick="info()">i</div>
 	</div>
 	<div class="post-filter" id="filter-box">
-		<?php echo do_shortcode('[searchandfilter types="checkbox" fields="category" submit_label="Filter" empty_search_url="/reviews"]'); ?>
+		<?php echo do_shortcode('[searchandfilter types=",checkbox" fields="search,category" submit_label="Filter" empty_search_url="/reviews"]'); ?>
 	</div>
 	<div class="blog-main">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>

@@ -11,11 +11,14 @@
                     <a href="<?php echo get_category_link($cat->term_id); ?>" style="background-image: url(<?php echo z_taxonomy_image_url($cat->term_id); ?>)"></a>
                 <?php endforeach; ?>
             </div>
+            <div class="sw-points">
+            <?php the_field('points'); ?>
+            </div>
         </div>
         
     </div>
     <div class="recommended-posts">
-
+    <?php get_sidebar(); ?>
     </div>
     <div class="single-content">
         <?php the_content(); ?>

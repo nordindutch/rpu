@@ -21,7 +21,12 @@
     <div class="main_logo"></div>
     <div class="container">
       <nav class="blog-nav">
-        <?php wp_list_pages('&title_li='); ?>
+        <?php
+        wp_nav_menu(array(
+          'theme_location' => 'my-custom-menu',
+          'container_class' => 'custom-menu-class'
+        ));
+        ?>
       </nav>
     </div>
   </div>
@@ -31,7 +36,7 @@
         .stz {
           fill: none;
           stroke: #FFFFFF;
-          stroke-width: 9;
+          stroke-width: 12;
           stroke-miterlimit: 10;
           z-index: 100;
         }
